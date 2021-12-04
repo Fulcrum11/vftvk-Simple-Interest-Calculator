@@ -2,40 +2,48 @@
 <title>Web App – Simple Interest Calculator</title>
 <meta charset="UTF-8">
 <html>
-    <head>
-    <script src="script.js" type="text/javascript"></script>
+
+<head>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+</head>
+
+<body>
+    <div id="roundeddiv">
         <h1>Simple Interest Calculator</h1>
         <div>
-        <p>
-        Amount <input type="number"  id="amount" value=1000><br/>
-        </p>
-        <p>
-        Rate <input type="range" min=1.0 max=20.0 step="0.1" class="slider" id="rate" value=1 onchange="display()"><label class="range" id="range" for="range">1</label>%<br/>
-        </p>
-        <p>No. of Years <select id="years">
-                        <option value=1>1</option>
-                        <option value=2>2</option>
-                        <option value=3>3</option>
-                        <option value=4>4</option>
-                        <option value=5>5</option>
-                        <option value=6>6</option>
-                        <option value=7>7</option>
-                        <option value=8>8</option>
-                        <option value=9>9</option>
-        </select><br/>
-        </p>
-        <button onclick="compute()">Compute Interest</button>
+            <p>
+                Amount <input type="number" id="amount" value=1000><br />
+            </p>
+            <p>
+                Rate <input type="range" min=1.0 max=20.0 step="0.1" class="slider" id="rate" value=1
+                    onchange="display()"><label class="range" id="range" for="range">1</label>%<br />
+            </p>
+            <p>No. of Years <select id="years">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                </select><br />
+            </p>
+            <button onclick="compute()">Compute Interest</button><br/>
         </div>
         <div class="getresult" id="resulttext">
-            If you deposit <label id="startamount"></label><br/> at an interest rate of <label id="intrate"></label>%<br/>
-            You will receive an amount of <label id="endresult"></label><br/> in the year <label id="endyear"></label><br/>
+            If you deposit <label id="startamount"></label><br /> at an interest rate of <label
+                id="intrate"></label>%<br />
+            You will receive an amount of <label id="endresult"></label><br/> in the year <label
+                id="endyear"></label><br />
         </div>
-    </body>
-<footer>
-    <br/>
-    &#169; This Calculator belongs to KP
-</footer>
+    </div>
+    <footer>
+        <br />
+        &#169; This Calculator belongs to KP
+    </footer>
+</body>
+
 </html>
