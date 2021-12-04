@@ -5,8 +5,16 @@ body {
     color:white;
     padding-left:80px;
 }
-label{font-weight: bold; color: yellow;}
+label{font-weight: bold; background-color:yellow;}
 footer{padding-top: 100px;}
 #resulttext {
     display:none;
+}
+#roundeddiv {
+    border-radius: 25px;
+    background-color:white;
+    color:black;
+    border: 2px solid black;
+    padding: 20px;
+    width: 30%;
 }
